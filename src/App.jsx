@@ -421,7 +421,7 @@ function RegisterPage() {
     <div style={{ width:"100%", fontFamily:"Arial,sans-serif" }}>
       <div style={{ maxWidth:960, margin:"0 auto", padding:"120px 24px", textAlign:"center" }}>
         {/* 1. Top emoji replaced with an img tag. Fill in your image path or URL in the src="" attribute */}
-        <img src="src/betterver.jpg" style={{ width:96, height:96, borderRadius:"50%", objectFit:"cover", display:"block", margin:"0 auto 36px" }} />
+        <img src="/betterver.jpg" style={{ width:96, height:96, borderRadius:"50%", objectFit:"cover", display:"block", margin:"0 auto 36px" }} />
         
         <h1 style={{ fontSize:"clamp(36px, 5vw, 52px)", fontWeight:900, letterSpacing:"-2px", color:C.dark, marginBottom:18 }}>Registration</h1>
         <p style={{ fontSize:18, lineHeight:1.8, color:C.gray, maxWidth:640, margin:"0 auto 56px" }}>
@@ -549,23 +549,23 @@ function SchedulePage() {
 function PeoplePage() {
   const [tab, setTab] = useState("speakers");
   const speakers = [
-    {name:"Ajuna Kyaruzi",year:"Grinnell '17",role:"Keynote Speaker",img:"src/Ajuna-Headshot.jpeg",color:C.red,
+    {name:"Ajuna Kyaruzi",year:"Grinnell '17",role:"Keynote Speaker",img:"/Ajuna-Headshot.jpeg",color:C.red,
       desc:"Ajuna Kyaruzi leads the SRE & Platform Advocacy team at Datadog, where she focuses on reliability engineering and large-scale systems. A former engineer at Google, she is also a strong advocate for mentorship and expanding access to technology careers."},
   ];
   const mentors = [
-    {name:"Gemma Sala",year:null,role:"Mentor & Coach",img:"src/Gemma-Sala.jpg",color:"#27AE60",
+    {name:"Gemma Sala",year:null,role:"Mentor & Coach",img:"/Gemma-Sala.jpg",color:"#27AE60",
       desc:"Gemma Sala is an Associate Professor of Political Science at Grinnell College with expertise in European politics, peace studies, and global engagement. She brings an academic perspective on international affairs, conflict resolution, and cross-cultural understanding."},
-    {name:"Emily Kolbe",year:"Grinnell '07",role:"Mentor & Coach",img:"src/Emily-Kolbe.jpg",color:"#E67E22",
+    {name:"Emily Kolbe",year:"Grinnell '07",role:"Mentor & Coach",img:"/Emily-Kolbe.jpg",color:"#E67E22",
       desc:"Emily Kolbe is a shareholder at Ahlers & Cooney, P.C. specializing in public finance and education law. Her background includes litigation, bond counsel work, and judicial clerkship experience, giving her deep expertise in legal and regulatory compliance."},
-    {name:"Jeanne Pinder",year:"Grinnell '75",role:"Mentor & Coach",img:"src/Jeanne-Pinder.png",color:"#C0392B",
+    {name:"Jeanne Pinder",year:"Grinnell '75",role:"Mentor & Coach",img:"/Jeanne-Pinder.png",color:"#C0392B",
       desc:"Jeanne Pinder is the founder and CEO of ClearHealthCosts, a journalism organization focused on healthcare price transparency. After nearly 25 years at The New York Times, she launched a venture that has influenced healthcare policy and consumer protection efforts across multiple states."},
   ];
   const judges = [
-    {name:"Joe Bagnoli",year:null,role:"Judge",img:"src/Joe-Bagnoli.jpeg",color:"#1A5276",
+    {name:"Joe Bagnoli",year:null,role:"Judge",img:"/Joe-Bagnoli.jpeg",color:"#1A5276",
       desc:"Joe Bagnoli serves as Vice President for Enrollment and Dean of Admission and Financial Aid at Grinnell College. He is known for his commitment to ethical admissions practices, educational access, and diversity initiatives."},
-    {name:"Robert Gehorsam",year:"Grinnell '76",role:"Judge",img:"src/Robert_Gehorsam.jpg",color:"#117A65",
+    {name:"Robert Gehorsam",year:"Grinnell '76",role:"Judge",img:"/Robert_Gehorsam.jpg",color:"#117A65",
       desc:"Robert Gehorsam is an entrepreneur, advisor, and climate-sector leader with experience spanning startups, nonprofits, and government consulting. His work focuses on innovation, sustainability, venture development, and the intersection of technology and social impact."},
-    {name:"Ajuna Kyaruzi",year:"Grinnell '17",role:"Judge",img:"src/Ajuna-Headshot.jpeg",color:"#7D3C98",
+    {name:"Ajuna Kyaruzi",year:"Grinnell '17",role:"Judge",img:"/Ajuna-Headshot.jpeg",color:"#7D3C98",
       desc:"Ajuna Kyaruzi leads the SRE & Platform Advocacy team at Datadog, where she focuses on reliability engineering and large-scale systems. A former engineer at Google, she is also a strong advocate for mentorship and expanding access to technology careers."},
   ];
   const groups = { speakers:{label:"2026 Speakers",data:speakers}, mentors:{label:"Mentors & Coaches",data:mentors}, judges:{label:"Judges",data:judges} };
