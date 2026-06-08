@@ -1,5 +1,13 @@
 import { useState, useEffect } from "react";
-import logoFile from './transparentinnovateGC.png'; // 1. Import your photo
+import logoFile from './transparentinnovateGC.png';
+
+import ajunaImg from '../public/Ajuna-Headshot.jpeg';
+import gemmaImg from '../public/Gemma-Sala.jpg';
+import emilyImg from '../public/Emily-Kolbe.jpg';
+import jeanneImg from '../public/Jeanne-Pinder.png';
+import joeImg from '../public/Joe-Bagnoli.jpeg';
+import robertImg from '../public/Robert_Gehorsam.jpg';
+import betterverImg from '../public/betterver.jpg';
 
 const C = {
   red: "#C0392B",
@@ -38,7 +46,7 @@ function Logo({ size = 40 }) {
       alt="InnovateGC logo" 
       width={w} 
       height={h}
-      style={{ objectFit: 'contain' }} // Ensures the image doesn't distort
+      style={{ objectFit: 'contain' }}
     />
   );
 }
@@ -97,10 +105,10 @@ function SDGBadge({ num, label, color }) {
       background: color, 
       color: "#fff", 
       borderRadius: 6, 
-      padding: "10px 18px",          // Increased padding to make the badge block larger
+      padding: "10px 18px",       
       display: "inline-flex", 
       alignItems: "center", 
-      gap: 10,                       // Wider space between the number and the text label
+      gap: 10,
       fontFamily: "Arial, sans-serif" 
     }}>
       {/* This controls the size of the number */}
@@ -144,8 +152,8 @@ function HomePage({ setPage }) {
   color: C.white, 
   position: "relative", 
   overflow: "hidden",
-  margin: 0,            // Force resets any margin collapse
-  padding: 0            // Let the inner wrapper handle the spacing securely
+  margin: 0,
+  padding: 0
 }}>
   
   {/* Decorative background circle */}
@@ -156,7 +164,7 @@ function HomePage({ setPage }) {
   <div style={{ 
     maxWidth: 1280, 
     margin: "0 auto", 
-    padding: "160px 24px", // Significant top and bottom breathing room
+    padding: "160px 24px",
     display: "flex", 
     flexDirection: "column", 
     alignItems: "center", 
